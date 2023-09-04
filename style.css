@@ -388,7 +388,7 @@ main section{
 .artworks2{
     height: 70%;
     border-radius: 30px;
-    background: url("/images/Pet.jpg");
+    background: url("../images/Pet.jpg");
     background-size: cover;
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -397,7 +397,7 @@ main section{
     cursor: grab;
 }
 .artworks2:hover{
-    background: url("/images/Pet1.jpg");
+    background: url("../images/Pet1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
@@ -793,7 +793,7 @@ footer{
 
     .artworks2{
         height: 50%;
-        background: url("/images/PetM.jpg");
+        background: url("../images/PetM.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -801,7 +801,7 @@ footer{
     }
     .artworks2:hover{
         height: 50%;
-        background: url("/images/PetM1.jpg");
+        background: url("../images/PetM1.jpg");
         background-position: center;
         background-position: center;
         background-size: cover;
