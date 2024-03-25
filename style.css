@@ -457,7 +457,7 @@ main section {
 .artworks2 {
     height: 70%;
     border-radius: 30px;
-    background: url("../images/Pet.jpg");
+    background: url("./images/Pet.jpg");
     background-size: cover;
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -467,7 +467,7 @@ main section {
 }
 
 .artworks2:hover {
-    background: url("../images/Pet1.jpg");
+    background: url("./images/Pet1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
