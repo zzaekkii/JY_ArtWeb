@@ -1,5 +1,3 @@
-
-
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&family=Gowun+Batang&family=Grape+Nuts&family=Indie+Flower&family=Wallpoet&display=swap');
 @import "reset.css";
@@ -7,7 +5,8 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     width: 100%;
     height: auto;
     display: flex;
@@ -18,79 +17,102 @@ body{
     animation: flow-background 15s ease infinite;
     background-size: 800% 800%;
 }
+
 /* 은은하게 웨이비 - 근데 아무도 눈치 못 챌 듯 */
-@keyframes flow-background { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+@keyframes flow-background {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 /* 헤더, 네비 */
-header{
+header {
     width: 100vw;
     height: 10vh;
     background: rgba(255, 255, 255, .1);
     position: fixed;
-    top: 0px; left: 0px;
+    top: 0px;
+    left: 0px;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.1);
 }
-header div{
+
+header div {
     opacity: .96;
     width: 94%;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
+
 .logo {
-    font: bold  26px/1 "Grape Nuts";
+    font: bold 26px/1 "Grape Nuts";
     color: aliceblue;
 }
-nav{
+
+nav {
     display: flex;
 }
+
 #gnb {
     display: flex;
     margin-right: 3vw;
 }
+
 #gnb li {
     margin: 0px 20px;
 }
-#gnb li a{
+
+#gnb li a {
     font: bold 20px/1 "Grape Nuts";
     color: aliceblue;
     letter-spacing: 1px;
 }
-header a:hover{
-    color: rgb(228, 214, 255);
-    text-shadow: 0px 0px 20px rgba(226, 213, 232, 0.5);
-}
-#gnb li a:hover{
+
+header a:hover {
     color: rgb(228, 214, 255);
     text-shadow: 0px 0px 20px rgba(226, 213, 232, 0.5);
 }
 
-.music{
+#gnb li a:hover {
+    color: rgb(228, 214, 255);
+    text-shadow: 0px 0px 20px rgba(226, 213, 232, 0.5);
+}
+
+.music {
     display: flex;
 }
-.music li{
+
+.music li {
     margin: 0px 15px;
 }
-.music li button{
+
+.music li button {
     font-size: 18px;
     background: none;
     color: aliceblue;
 }
-.music li button{
+
+.music li button {
     cursor: pointer;
 }
-.music li button:hover{
+
+.music li button:hover {
     color: rgb(228, 214, 255);
     text-shadow: 0px 0px 20px rgba(226, 213, 232, 0.5);
 }
+
 .burger {
     display: none;
     font-size: 24px;
@@ -100,28 +122,33 @@ header a:hover{
 }
 
 /* 첫 화면 */
-figure{
+figure {
     width: 100%;
     height: 100vh;
-    top: 0px; left: 0px;    
+    top: 0px;
+    left: 0px;
     overflow: hidden;
 }
-figure video{
+
+figure video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
-.greeting{
+
+.greeting {
     position: absolute;
     left: 6vw;
     top: 50%;
     transform: translateY(-50%);
 }
-.main_logo{
+
+.main_logo {
     font: normal 8vw/1 "Fredericka the Great";
     color: rgb(229, 185, 240);
 }
-.intro{
+
+.intro {
     display: inline-block;
     margin-top: 5vh;
     color: rgb(192, 203, 241);
@@ -129,23 +156,25 @@ figure video{
 }
 
 /* main */
-main{
-    width: 100%;    
+main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-main section{
+
+main section {
     width: 80vw;
     height: 100vh;
 }
 
-#instroduction{
+#instroduction {
     height: 10vh;
 }
+
 /* introduction */
-.introduction{
+.introduction {
     display: flex;
     justify-content: space-between;
     text-shadow: 0px 0px 5px rgba(9, 9, 9, 0.5);
@@ -154,10 +183,11 @@ main section{
     color: rgb(236, 231, 255);
     border-radius: 16px;
 }
-.my-intro{
+
+.my-intro {
     width: 30%;
     height: 80%;
-    background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(45,3,89,1) 60%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(343deg, rgba(2, 0, 36, 1) 0%, rgba(45, 3, 89, 1) 60%, rgba(0, 0, 0, 1) 100%);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     display: flex;
     flex-direction: column;
@@ -165,24 +195,28 @@ main section{
     align-items: center;
     border-radius: 30px;
 }
-.photo{
+
+.photo {
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     /* opacity: .9; */
 }
-.photo img{
+
+.photo img {
     width: 100%;
     border-radius: 50%;
     transition: all 1s;
     box-shadow: 0px 0px 10px 15px rgba(114, 89, 195, 0.22);
 }
-.photo img:hover{
+
+.photo img:hover {
     box-shadow: 0px 0px 10px 15px rgba(206, 193, 250, 0.22);
     filter: brightness(105%);
 }
-.introduce{
+
+.introduce {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -192,23 +226,27 @@ main section{
     margin-top: 10%;
     transition: 1s;
 }
-.introduce ul{
+
+.introduce ul {
     margin-top: 8%;
     font-size: .8em;
 }
-.introduce li:first-child{
+
+.introduce li:first-child {
     padding: 10% 0%;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10%;
 }
-.introduce:hover{
+
+.introduce:hover {
     text-shadow: 0px 0px 20px rgba(226, 213, 232, 0.5);
 }
-.contact a{
+
+.contact a {
     color: rgb(207, 194, 255);
 }
 
-.gallery-intro{
+.gallery-intro {
     width: 60%;
     height: 80%;
     display: flex;
@@ -220,7 +258,8 @@ main section{
     color: rgb(236, 231, 255);
     border-radius: 16px;
 }
-.gallery-intro div{
+
+.gallery-intro div {
     margin: 5%;
     font-size: .9em;
     font-weight: 590;
@@ -228,16 +267,23 @@ main section{
 }
 
 /* artworks */
-.artworks{width: 100%;height: 100%;}
-.gap{height: 25vh;}
+.artworks {
+    width: 100%;
+    height: 100%;
+}
+
+.gap {
+    height: 25vh;
+}
 
 /* artworks1 */
-.artbox1{
+.artbox1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.artworks1{
+
+.artworks1 {
     width: 50%;
     height: 60%;
     display: flex;
@@ -245,6 +291,7 @@ main section{
     align-items: center;
     position: relative;
 }
+
 .clock-frame {
     display: flex;
     justify-content: center;
@@ -254,12 +301,13 @@ main section{
     background-color: #4b069f;
     border: 10px solid #4418a2;
     border-radius: 50%;
-    box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
-                inset 4px 4px 10px rgba(0,0,0,0.5),
-                inset -4px -4px 10px rgba(67,67,67,0.5),
-                4px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+        inset -4px -4px 10px rgba(67, 67, 67, 0.5),
+        4px 4px 10px rgba(0, 0, 0, 0.3);
     position: relative;
 }
+
 .clock-innerface {
     width: 32vh;
     height: 32vh;
@@ -271,7 +319,8 @@ main section{
     justify-content: center;
     align-items: center;
 }
-.brand{
+
+.brand {
     font-family: "Grape Nuts";
     color: rgb(233, 214, 255);
     text-align: center;
@@ -280,9 +329,12 @@ main section{
     letter-spacing: 2px;
     font-weight: 500;
     transform: translate(0, -8vh);
-    text-shadow: 0px 0px 10px rgba(226, 213, 232, 0.5);    
+    text-shadow: 0px 0px 10px rgba(226, 213, 232, 0.5);
 }
-.pointer-box_h, .pointer-box_m, .pointer-box_s {
+
+.pointer-box_h,
+.pointer-box_m,
+.pointer-box_s {
     position: absolute;
     width: 38vh;
     height: 38vh;
@@ -291,6 +343,7 @@ main section{
     justify-content: center;
     align-items: center;
 }
+
 .pointer-hour {
     width: 6px;
     height: 13vh;
@@ -300,6 +353,7 @@ main section{
     transform: translate(0, -30%);
     background-color: rgb(216, 216, 216);
 }
+
 .pointer-min {
     width: 5px;
     height: 15vh;
@@ -307,6 +361,7 @@ main section{
     transform: translate(0, -50%);
     background-color: rgb(217, 171, 255);
 }
+
 .pointer-sec {
     width: 4px;
     height: 22vh;
@@ -314,6 +369,7 @@ main section{
     transform: translate(0, -30%);
     background-color: rgb(143, 44, 255);
 }
+
 .clock-markingface {
     width: 35vh;
     height: 35vh;
@@ -322,10 +378,12 @@ main section{
     position: relative;
     z-index: 1;
 }
+
 /* 시계 숫자 */
-.marker{
-    background-color: rgba(255,255,255,0.8);
+.marker {
+    background-color: rgba(255, 255, 255, 0.8);
 }
+
 .marker-0h {
     width: 4px;
     height: inherit;
@@ -333,6 +391,7 @@ main section{
     right: 49%;
     overflow: hidden;
 }
+
 .marker-3h {
     width: 4px;
     height: inherit;
@@ -341,43 +400,53 @@ main section{
     overflow: hidden;
     transform: rotate(90deg);
 }
+
 .marker-1h {
     transform: rotate(30deg);
 }
+
 .marker-2h {
     transform: rotate(60deg);
 }
+
 .marker-4h {
     transform: rotate(120deg);
 }
+
 .marker-5h {
     transform: rotate(150deg);
 }
-.marker-1h, .marker-2h, .marker-4h, .marker-5h {
-    background-color: rgba(255,255,255,0.8);
+
+.marker-1h,
+.marker-2h,
+.marker-4h,
+.marker-5h {
+    background-color: rgba(255, 255, 255, 0.8);
     width: 4px;
     height: inherit;
     position: absolute;
     right: 49%;
     overflow: hidden;
 }
-#time{
+
+#time {
     font-family: "Gowun Batang";
     color: aliceblue;
-    font-size:  1.5em;
+    font-size: 1.5em;
     line-height: 2;
     letter-spacing: 2px;
     font-weight: 500;
     text-shadow: 0px 0px 10px rgba(226, 213, 232, 0.5);
 }
-.description1{
+
+.description1 {
     height: 20%;
     font-family: "Gowun Batang";
     color: aliceblue;
     display: flex;
     text-align: center;
     align-items: center;
-    font-size:  1.2em;
+    font-size: 1.2em;
     line-height: 2;
     letter-spacing: 2px;
     font-weight: 500;
@@ -385,37 +454,40 @@ main section{
 }
 
 /* artworks2 */
-.artworks2{
+.artworks2 {
     height: 70%;
     border-radius: 30px;
     background: url("../images/Pet.jpg");
     background-size: cover;
     /* background-position: center; */
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     transition: all 1.5s;
     cursor: grab;
 }
-.artworks2:hover{
+
+.artworks2:hover {
     background: url("../images/Pet1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
-    background-attachment:fixed;
-    box-shadow: 0px 4px 20px 8px rgba(255,129,129,0.38);
+    background-attachment: fixed;
+    box-shadow: 0px 4px 20px 8px rgba(255, 129, 129, 0.38);
 }
-.description2{
+
+.description2 {
     font-family: "Gowun Batang";
     width: 100%;
     height: 30%;
     color: aliceblue;
 }
-.contents2{
+
+.contents2 {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    font-size:  1.2em;
+    font-size: 1.2em;
     line-height: 2;
     letter-spacing: 2px;
     font-weight: 500;
@@ -423,12 +495,13 @@ main section{
 }
 
 /* artworks3 */
-.artbox3{
+.artbox3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 130vh;
 }
+
 .artworks3 {
     width: 100%;
     height: 80%;
@@ -437,7 +510,8 @@ main section{
     position: relative;
     perspective: 60vw;
 }
-.artworks3 > video {
+
+.artworks3>video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -446,6 +520,7 @@ main section{
     left: 0px;
     opacity: 0.9;
 }
+
 /* 회전 축 - 기둥 */
 .circle {
     width: 490px;
@@ -458,6 +533,7 @@ main section{
     transform-style: preserve-3d;
     animation: rotate linear 60s infinite;
 }
+
 .circle article {
     /* width: auto; */
     height: 95%;
@@ -466,6 +542,7 @@ main section{
     left: 0px;
     backface-visibility: hidden;
 }
+
 .circle article h1 {
     position: absolute;
     top: 0px;
@@ -477,15 +554,18 @@ main section{
     opacity: 0;
     transition: .7s;
 }
+
 .circle article:hover h1 {
     top: -60px;
     opacity: 1;
 }
+
 .inner {
     width: 100%;
     height: 100%;
 }
-.inner > div {
+
+.inner>div {
     width: 100%;
     height: 100%;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -494,14 +574,15 @@ main section{
     overflow: hidden;
     cursor: grab;
     transition: 0.5s;
-    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 22px 2px rgba(255,255,255,0.78);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 22px 2px rgba(255, 255, 255, 0.78);
 }
-.inner > div:hover {
+
+.inner>div:hover {
     transform: scale(1.03);
 }
 
 /* 아이언맨 슈트들 */
-.inner div > div {
+.inner div>div {
     width: 100%;
     height: 100%;
     border: 1px solid #aaa;
@@ -509,55 +590,70 @@ main section{
     position: relative;
     overflow: hidden;
 }
-.inner div > div img {
+
+.inner div>div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     opacity: .93;
 }
+
 .ironman1 {
     transform: rotateY(0deg) translateZ(-764px);
 }
+
 .ironman2 {
     transform: rotateY(36deg) translateZ(-764px);
 }
+
 .ironman3 {
     transform: rotateY(72deg) translateZ(-764px);
 }
+
 .ironman4 {
     transform: rotateY(108deg) translateZ(-764px);
 }
+
 .ironman5 {
     transform: rotateY(144deg) translateZ(-764px);
 }
+
 .ironman6 {
     transform: rotateY(180deg) translateZ(-764px);
 }
+
 .ironman7 {
     transform: rotateY(216deg) translateZ(-764px);
 }
+
 .ironman8 {
     transform: rotateY(252deg) translateZ(-764px);
 }
+
 .ironman9 {
     transform: rotateY(288deg) translateZ(-764px);
 }
+
 .ironman10 {
     transform: rotateY(324deg) translateZ(-764px);
 }
+
 /* 슈트 회전 각 */
 @keyframes rotate {
     0% {
         transform: rotateY(0deg);
     }
+
     100% {
         transform: rotateY(360deg);
     }
 }
-.contents3{
+
+.contents3 {
     display: flex;
 }
-.description3{
+
+.description3 {
     justify-content: center;
     text-align: center;
     font-family: "Gowun Batang";
@@ -566,7 +662,7 @@ main section{
     color: aliceblue;
     display: flex;
     align-items: center;
-    font-size:  1.2em;
+    font-size: 1.2em;
     line-height: 2;
     letter-spacing: 2px;
     font-weight: 500;
@@ -574,24 +670,27 @@ main section{
 }
 
 /* artworks4 */
-.artworks4{
+.artworks4 {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
-.vdbox{
+
+.vdbox {
     width: 55%;
     height: 70%;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
-.vd{
+
+.vd {
     width: 100%;
     height: 100%;
     border-radius: 30px;
 }
-.description4{
+
+.description4 {
     font-family: "Gowun Batang";
     width: 40%;
     height: 100%;
@@ -601,26 +700,30 @@ main section{
     justify-content: center;
     color: aliceblue;
 }
-.description4 div{
+
+.description4 div {
     width: 100%;
     height: 30%;
     display: flex;
     align-items: center;
     /* justify-content: space-between */
 }
-.title4{
+
+.title4 {
     height: fit-content;
 }
-.vdtitle{
+
+.vdtitle {
     font-size: 1.7em;
     letter-spacing: 2px;
     font-weight: 600;
     color: aliceblue;
     text-shadow: 0px 0px 10px rgba(226, 213, 232, 0.5);
 }
-.contents4{
+
+.contents4 {
     height: fit-content;
-    font-size:  1em;
+    font-size: 1em;
     line-height: 2;
     letter-spacing: 3px;
     font-weight: 500;
@@ -629,7 +732,7 @@ main section{
 
 
 /* footer */
-footer{
+footer {
     width: 100%;
     height: 10vh;
     background: rgba(30, 29, 29, 0.448);
@@ -637,56 +740,66 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.footer_copyright{
+
+.footer_copyright {
     color: rgb(169, 168, 168);
     font: .8vw/1 "Arial";
     letter-spacing: 2px;
 }
-.footer_scroll-up{
-    width: 3.5vw; height: 3.5vw;
+
+.footer_scroll-up {
+    width: 3.5vw;
+    height: 3.5vw;
     background: rgb(68, 67, 67);
     border-radius: 50%;
     position: fixed;
-    bottom: 3vh; right: 3vh;
+    bottom: 3vh;
+    right: 3vh;
     z-index: 10;
     text-align: center;
     line-height: 3.3vw;
     color: white;
-    box-shadow: 1px 2px 5px 0px rgba(0,0,0,.3);
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, .3);
 }
-.footer_scroll-up:hover{
+
+.footer_scroll-up:hover {
     background: rgb(173, 172, 172);
 }
 
 /* 버거 메뉴 */
-.burgermenu{
+.burgermenu {
     display: none;
 }
-.burgermenu.on{
+
+.burgermenu.on {
     /* transition: .5s; */
     display: flex;
     flex-direction: column;
     z-index: 100;
     position: fixed;
     background: rgba(173, 149, 240, 0.584);
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
     width: 20vw;
     height: 100vh;
 }
-.burgerheader{
+
+.burgerheader {
     height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.close-burger{
+
+.close-burger {
     width: 100%;
     display: none;
     display: block;
     transition: all .5s ease;
     display: none;
 }
-.close-burger.on{
+
+.close-burger.on {
     display: block;
     font-size: 24px;
     color: white;
@@ -694,31 +807,36 @@ footer{
     padding-left: 10%;
     cursor: pointer;
 }
-.close-burger:hover{
+
+.close-burger:hover {
     color: rgb(235, 207, 248);
     text-shadow: 0px 0px 20px rgba(226, 213, 232, 0.5);
 }
-.burgermusic{
+
+.burgermusic {
     display: flex;
     justify-content: center;
 }
-.burgermusic div{
+
+.burgermusic div {
     width: 8vw;
     display: flex;
     justify-content: space-between;
 }
-.burgermusic button{
+
+.burgermusic button {
     font-size: 18px;
     background: none;
     color: aliceblue;
     cursor: pointer;
 }
-.burgermusic button:hover{
+
+.burgermusic button:hover {
     color: rgb(235, 207, 248);
     text-shadow: 0px 0px 20px rgba(226, 213, 232, 0.5);
 }
 
-.sub { 
+.sub {
     width: 100%;
     height: 40%;
     display: flex;
@@ -727,270 +845,350 @@ footer{
     justify-content: space-between;
     margin-top: 20vh;
 }
-.sub a{
+
+.sub a {
     font: bold 1.5em/1 "Grape Nuts";
     color: aliceblue;
     letter-spacing: 2px;
 }
-.sub a:hover{
+
+.sub a:hover {
     color: rgb(235, 207, 248);
     text-shadow: 0px 0px 20px rgba(226, 213, 232, 0.5);
 }
-.shadow { 
-    position: fixed; 
-    top: 0; right: 0; 
-    width: 100%; height: 100%; 
-    z-index: 90; 
-    background: rgba(0, 0, 0, 0.7); 
-    display: none; 
-    cursor: pointer; 
+
+.shadow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    cursor: pointer;
 }
 
 /* 반응형 - 크기에 따라 조정 */
 @media screen and (min-width: 1950px) {
-    .artworks3{
+    .artworks3 {
         perspective: 40vw;
     }
 }
-@media screen and (max-width: 1024px){
-    header{
+
+@media screen and (max-width: 1024px) {
+    header {
         height: 12vh;
     }
-    #gnb{
+
+    #gnb {
         display: none;
     }
-    .music{
+
+    .music {
         display: none;
     }
-    .burger{
+
+    .burger {
         display: block;
     }
 
-    .main_logo{
+    .main_logo {
         font-size: 11vw;
     }
-    .intro{
+
+    .intro {
         font-size: 2.2vw;
     }
 
-    .introduction{
+    .introduction {
         font-size: 1em;
         height: 65vh;
     }
-    .gallery-intro div{
+
+    .gallery-intro div {
         font-size: .8em;
     }
-    .artworks1{
+
+    .artworks1 {
         display: flex;
         justify-content: center;
     }
-    .clock-frame{
+
+    .clock-frame {
         display: none;
     }
-    #time{
+
+    #time {
         font-size: 2em;
     }
 
-    .artworks2{
+    .artworks2 {
         height: 50%;
-        background: url("/images/PetM.jpg");
+        background: url("./images/PetM.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment:fixed;
+        background-attachment: fixed;
     }
-    .artworks2:hover{
+
+    .artworks2:hover {
         height: 50%;
-        background: url("/images/PetM1.jpg");
+        background: url("./images/PetM1.jpg");
         background-position: center;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment:fixed;
+        background-attachment: fixed;
     }
-    .description1, .contents2, .description3{
+
+    .description1,
+    .contents2,
+    .description3 {
         font-size: 1em;
     }
-    .artworks3{
+
+    .artworks3 {
         height: 80%;
         perspective: 45vw;
     }
-    .circle article{
+
+    .circle article {
         height: 90%;
     }
-    .vdtitle{
+
+    .vdtitle {
         font-size: 1.2em;
         font-weight: 600;
     }
-    .artbox4{
+
+    .artbox4 {
         height: 60vh;
     }
-    .title4{
+
+    .title4 {
         font-size: 1.1em;
     }
-    .contents4{
+
+    .contents4 {
         margin-top: 20%;
-        font-size:  1em;
+        font-size: 1em;
         line-height: 2;
         letter-spacing: 1px;
         font-weight: 500;
     }
 }
+
 @media screen and (max-width: 1350px) and (min-height: 1000px) {
-    .main_logo{
+    .main_logo {
         font-size: 12vw;
     }
-    .intro{
+
+    .intro {
         font-size: 2.9vw;
     }
-    .artworks1{
+
+    .artworks1 {
         height: 30%;
     }
-    #time{
+
+    #time {
         font-size: 3em;
     }
-    .description1, .description2{
+
+    .description1,
+    .description2 {
         font-size: 2em;
     }
 }
-@media screen and (max-width: 768px){
-    .main_logo{
+
+@media screen and (max-width: 768px) {
+    .main_logo {
         font-size: 13vw;
     }
-    .intro{
+
+    .intro {
         font-size: 2.8vw;
     }
-    .gap{
+
+    .gap {
         height: 5vh;
     }
-    .gallery-intro div{
+
+    .gallery-intro div {
         font-size: .7em;
     }
-    #time{
+
+    #time {
         font-size: 1.5em;
     }
-    .description1, .contents2, .description3{
+
+    .description1,
+    .contents2,
+    .description3 {
         font-size: .9em;
     }
-    .artworks3{
+
+    .artworks3 {
         height: 60%;
     }
-    .circle article{
+
+    .circle article {
         height: 88%;
     }
-    .vdtitle{
+
+    .vdtitle {
         font-size: 1em;
     }
-    .contents4{
+
+    .contents4 {
         font-size: .7em;
     }
-    .sub a{
+
+    .sub a {
         font-size: 1em;
     }
-    .footer_scroll-up{
-        width: 5vw; height: 5vw;
+
+    .footer_scroll-up {
+        width: 5vw;
+        height: 5vw;
     }
 }
+
 @media screen and (max-width: 768px) and (min-height: 1000px) {
-    .intro{
+    .intro {
         font-size: 4vw;
     }
-    .title4{
+
+    .title4 {
         font-size: 1.2em;
     }
-    .contents4{
+
+    .contents4 {
         font-size: 1em;
     }
 }
+
 @media screen and (max-width: 500px) and (min-height: 740px) {
-    .main_logo{
+    .main_logo {
         font-size: 18vw;
     }
-    .intro{
+
+    .intro {
         font-size: 4vw;
     }
-    .introduction{
+
+    .introduction {
         font-size: .7em;
         height: 40vh;
     }
-    .my-intro, .gallery-intro{
+
+    .my-intro,
+    .gallery-intro {
         height: 30vh;
     }
-    .gallery-intro div{
+
+    .gallery-intro div {
         font-size: .5em;
     }
-    .gap{
+
+    .gap {
         height: 7vh;
     }
-    .artworks1{
+
+    .artworks1 {
         height: 35%;
     }
-    #time{
+
+    #time {
         font-size: 1.4em;
     }
-    .artworks3{
+
+    .artworks3 {
         height: 40%;
         perspective: 70vw;
     }
-    .vdtitle{
+
+    .vdtitle {
         font-size: .9rem;
     }
-    .contents4{
+
+    .contents4 {
         font-size: .7rem;
     }
-    .sub a{
+
+    .sub a {
         font-size: 1.3em;
     }
-    .burgermenu.on{
+
+    .burgermenu.on {
         width: 40vw;
     }
 }
+
 @media screen and (max-width: 375px) and (min-height: 700px) {
-    .my-intro, .gallery-intro{
+
+    .my-intro,
+    .gallery-intro {
         height: 30vh;
     }
-    .gap{
+
+    .gap {
         height: 20vh;
     }
-    .artworks1{
+
+    .artworks1 {
         height: 35%;
     }
-    #time{
+
+    #time {
         font-size: 1.4em;
     }
-    .sub a{
+
+    .sub a {
         font-size: 1em;
     }
 }
+
 @media screen and (max-width: 330px) and (min-height: 650px) {
-    .introduce ul{
+    .introduce ul {
         margin-top: 8%;
         font-size: 1px;
     }
-    .my-intro, .gallery-intro{
+
+    .my-intro,
+    .gallery-intro {
         height: 50vh;
     }
-    .gap{
+
+    .gap {
         height: 20vh;
     }
-    .artworks1{
+
+    .artworks1 {
         height: 45%;
     }
-    #time{
+
+    #time {
         font-size: 1em;
     }
-    .artworks3{
+
+    .artworks3 {
         perspective: 55vw;
     }
-    .title4{
+
+    .title4 {
         font-size: .5em;
     }
-    .contents4{
+
+    .contents4 {
         font-size: .3em;
     }
-    .sub a{
+
+    .sub a {
         font-size: .9em;
     }
-    .burgermenu.on{
+
+    .burgermenu.on {
         width: 40vw;
     }
