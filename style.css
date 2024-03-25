@@ -793,7 +793,7 @@ footer{
 
     .artworks2{
         height: 50%;
-        background: url("../images/PetM.jpg");
+        background: url("/images/PetM.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -801,7 +801,7 @@ footer{
     }
     .artworks2:hover{
         height: 50%;
-        background: url("../images/PetM1.jpg");
+        background: url("/images/PetM1.jpg");
         background-position: center;
         background-position: center;
         background-size: cover;
