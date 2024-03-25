@@ -7,3 +7,4 @@
   - HTML5, CSS3, JavaScript로 예술 작품을 제작하고, 온라인 미술관을 만들어 전시하고자 함
 
 - 링크: https://zzaekkii.github.io/WebProgramming_Project/
+  - 오류 발생 시 링크: http://myweb.kyonggi.ac.kr/users/201912152/
